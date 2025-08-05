@@ -3,17 +3,14 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Route 1: Home
 app.get('/', (req, res) => {
-  res.send('Welcome to the Home Page!');
+  res.send('Welcome to the Home Page, changes made!');
 });
 
-// Route 2: About
 app.get('/about', (req, res) => {
   res.send('This is the About Page.');
 });
 
-// Route 3: Contact
 app.get('/contact', (req, res) => {
   res.send('Contact us at contact@example.com');
 });
